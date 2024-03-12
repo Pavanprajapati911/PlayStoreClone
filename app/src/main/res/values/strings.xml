@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Playstore_clone</string>
+    <string name="search_bar_text">Search apps &amp; games</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="events_and_offers">Events &amp; offers</string>
+    <string name="data_safety_description">Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use. region, and age. The developerprovided this information and may update it overtime.</string>
+    <string name="ratings_and_reviews_description">Ratings and reviews are verified and are from people who use the same type of device that you use</string>
+    <string name="reviews">Test review , Its a pretty good game or app ive been playing it for so long. there was never anything wrong with the game.</string>
+    <string name="profile_page_dialog_text">Help &amp; feedback</string>
+    <string name="manage_apps_and_device">Manage apps &amp; device</string>
+    <string name="notifications_and_offers">Notification &amp; offers</string>
+    <string name="payments_and_subscriptions">Payments &amp; subscriptions</string>
+</resources>

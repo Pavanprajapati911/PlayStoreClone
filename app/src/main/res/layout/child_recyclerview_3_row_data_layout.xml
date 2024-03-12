@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/_285sdp"
+    android:paddingStart="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/child_Recyclerview_3_row__first_layout"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/child_rv_3_row_FirstGame_logo"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/child_rv_3_row_FirstGame_name"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/dark_grey"
+                android:text="Game name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/child_rv_3_row_FirstGame_type"
+                android:textSize="@dimen/_9ssp"
+                android:gravity="center_vertical"
+                android:textColor="@color/app_text_color"
+                android:text="Game Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/child_rv_3_row_FirstGame_ratings"
+                   android:textSize="@dimen/_10ssp"
+                   android:textColor="@color/app_text_color"
+                   android:text="4.6 "
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+               <ImageView
+                   android:layout_gravity="center_vertical"
+                   android:src="@drawable/star_icon"
+                   android:layout_width="@dimen/_7sdp"
+                   android:layout_height="@dimen/_7sdp"/>
+
+               <TextView
+                   android:id="@+id/child_rv_3_row_FirstGame_size"
+                   android:layout_marginLeft="@dimen/_10sdp"
+                   android:textSize="@dimen/_9ssp"
+                   android:text="100 MB"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/child_Recyclerview_3_row__second_layout"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/child_rv_3_row_SecondGame_logo"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/child_rv_3_row_SecondGame_name"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/dark_grey"
+                android:text="Game name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/child_rv_3_row_SecondGame_type"
+                android:textSize="@dimen/_9ssp"
+                android:gravity="center_vertical"
+                android:textColor="@color/app_text_color"
+                android:text="Game Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/child_rv_3_row_SecondGame_ratings"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="@color/app_text_color"
+                    android:text="4.6 "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/star_icon"
+                    android:layout_width="@dimen/_7sdp"
+                    android:layout_height="@dimen/_7sdp"/>
+
+                <TextView
+                    android:id="@+id/child_rv_3_row_SecondGame_size"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_9ssp"
+                    android:text="100 MB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/child_Recyclerview_3_row__third_layout"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/child_rv_3_row_ThirdGame_logo"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/child_rv_3_row_ThirdGame_name"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/dark_grey"
+                android:text="Game name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/child_rv_3_row_ThirdGame_type"
+                android:textSize="@dimen/_9ssp"
+                android:gravity="center_vertical"
+                android:textColor="@color/app_text_color"
+                android:text="Game Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/child_rv_3_row_ThirdGame_ratings"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="@color/app_text_color"
+                    android:text="4.6 "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/star_icon"
+                    android:layout_width="@dimen/_7sdp"
+                    android:layout_height="@dimen/_7sdp"/>
+
+                <TextView
+                    android:id="@+id/child_rv_3_row_ThirdGame_size"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_9ssp"
+                    android:text="100 MB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search_activity">
+
+           <LinearLayout
+               android:background="@drawable/search_result_page_search_bar_baclground"
+               android:gravity="center_vertical"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_40sdp">
+
+               <ImageView
+                   android:id="@+id/search_page_backbutton"
+                   android:layout_marginStart="@dimen/_10sdp"
+                   android:layout_alignParentRight="true"
+                   android:src="@drawable/arrow"
+                   android:layout_width="@dimen/_20sdp"
+                   android:layout_height="@dimen/_24sdp"/>
+
+               <EditText
+                   android:inputType="textAutoCorrect"
+                   android:imeOptions="actionSearch"
+                   android:maxLines="1"
+                   android:layout_marginStart="@dimen/_10sdp"
+                   android:textColorHint="@color/app_text_color"
+                   android:id="@+id/search_page_edittext"
+                   android:paddingStart="@dimen/_5sdp"
+                   android:hint="Search apps and games"
+                   android:layout_marginEnd="@dimen/_5sdp"
+                   android:background="@color/white"
+                   android:layout_width="@dimen/_225sdp"
+                   android:layout_height="@dimen/_17sdp"/>
+
+               <RelativeLayout
+                   android:layout_marginEnd="@dimen/_10sdp"
+                   android:gravity="center_vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <ImageView
+                       android:id="@+id/search_page_image_to_change"
+                       android:layout_alignParentRight="true"
+                       android:src="@drawable/mike_icon"
+                       android:layout_width="@dimen/_20sdp"
+                       android:layout_height="@dimen/_20sdp"/>
+
+
+               </RelativeLayout>
+
+           </LinearLayout>
+
+
+    <ListView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:divider="@null"
+        android:id="@+id/search_page_history_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

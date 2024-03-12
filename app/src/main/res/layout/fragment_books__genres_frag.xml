@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".bookspage_tab_fragments.Books_Genres_frag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp">
+
+        <LinearLayout
+            android:background="@drawable/top_charts_top_free_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_22sdp">
+
+            <ImageView
+                android:src="@drawable/right_check_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:text="Top free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@drawable/arrow_drop_down"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:gravity="center"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingStart="@dimen/_15sdp"
+            android:background="@drawable/top_charts_buttons_background"
+            android:textColor="@color/black"
+            android:text="Audiobooks"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_22sdp"/>
+
+
+        <TextView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:gravity="center"
+            android:background="@drawable/top_charts_buttons_background"
+            android:textColor="@color/black"
+            android:text="Comics"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_22sdp"/>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/books_genres_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

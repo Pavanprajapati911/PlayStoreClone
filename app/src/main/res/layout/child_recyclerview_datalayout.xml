@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_280sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="@dimen/_10sdp"
+    android:layout_height="@dimen/_160sdp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/child_Recyclerview_navigate_to_event_details_page"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/child_rv_event_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <RelativeLayout
+                android:id="@+id/child_rv_event_gradientBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/child_rv_event_title"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/white"
+                        android:text="event title"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_20sdp"/>
+
+
+                    <TextView
+                        android:id="@+id/child_rv_event_description"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/white"
+                        android:text="event description"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_20sdp"/>
+
+                    <LinearLayout
+                        android:id="@+id/child_recyclerview__navigate_to_app_content_page"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            app:cardCornerRadius="@dimen/_7sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp">
+
+                            <ImageView
+                                android:scaleType="fitXY"
+                                android:id="@+id/child_rv_event_game_logo"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/child_rv_event_game_name"
+                                android:textSize="@dimen/_14sdp"
+                                android:textColor="@color/white"
+                                android:text="game name"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_20sdp"/>
+
+                            <TextView
+                                android:id="@+id/child_rv_event_game_companyname"
+                                android:textSize="@dimen/_10ssp"
+                                android:textColor="@color/white"
+                                android:text="company name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/child_rv_event_game_ratings"
+                                    android:gravity="center_vertical"
+                                    android:textSize="@dimen/_9ssp"
+                                    android:textColor="@color/white"
+                                    android:text="4.8 "
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <ImageView
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/star_icon"
+                                    android:layout_width="@dimen/_8sdp"
+                                    android:layout_height="@dimen/_8sdp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:textSize="@dimen/_9ssp"
+                                android:textColor="@color/white"
+                                android:text="In-app purchases"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:textColor="@color/white"
+                            android:text="Install"
+                            android:textAllCaps="false"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/child_vp_button_background"
+                            android:layout_width="@dimen/_65sdp"
+                            android:layout_height="@dimen/_28sdp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

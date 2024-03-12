@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/_10sdp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="@dimen/_7sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/child_rv_1_row_big_content_image"
+            android:layout_width="@dimen/_275sdp"
+            android:layout_height="@dimen/_120sdp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/child_rv_1_row_big_game_logo"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/child_rv_1_row_big_GameName"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/dark_grey"
+                android:text="game name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"/>
+
+            <TextView
+                android:id="@+id/child_rv_1_row_big_company_name"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/app_text_color"
+                android:text="company name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/child_rv_1_row_big_ratings"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="@color/app_text_color"
+                    android:text="4.5 "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/star_icon"
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_8sdp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:textSize="@dimen/_9ssp"
+                android:textColor="@color/app_text_color"
+                android:text="In-app purchases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

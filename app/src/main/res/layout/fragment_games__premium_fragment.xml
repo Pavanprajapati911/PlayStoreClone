@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".gamespage_tab_fragments.Games_Premium_fragment">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/games_premium_recylerview"
+        android:paddingTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/loading_animation_Background_Game__Premium"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_520sdp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_marginTop="@dimen/_200sdp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/loading_animation_Game__Premium"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading_lottie_animation" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_content_page_events_border"
+    android:layout_marginStart="@dimen/_15sdp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="0.3dp"
+        android:layout_marginStart="0.3dp"
+        android:layout_marginBottom="0.3dp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/app_content_page_events_rv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginEnd="0.3dp"
+        android:layout_marginBottom="0.3dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/_10ssp"
+                android:text="Ends on "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/app_content_page_events_rv_ending_date"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/_10ssp"
+                android:text="11/29/23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/app_content_page_events_rv_title_1"
+            android:textColor="@color/app_text_color"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="November Season Challenges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/app_content_page_events_rv_description"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="@color/app_text_color"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="The Champions' Champion skin joins th..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

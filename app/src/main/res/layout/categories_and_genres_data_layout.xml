@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_30sdp"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:layout_marginBottom="@dimen/_10sdp">
+
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/categories_and_genres_data_image"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:src="@drawable/offer_vector_icon"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"/>
+
+    <TextView
+        android:gravity="center_vertical"
+        android:textSize="@dimen/_11ssp"
+        android:id="@+id/categories_and_genres_data_title"
+        android:textColor="@color/app_text_color"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="Watch apps"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_20sdp"/>
+</LinearLayout>

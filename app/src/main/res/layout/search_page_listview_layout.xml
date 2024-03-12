@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_16sdp">
+
+    <ImageView
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:src="@drawable/clock_time_logo"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_24sdp"/>
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/search_page_history_data"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/_12sdp"
+        android:layout_gravity="center_vertical"
+        android:text="earn free crypto"
+        android:layout_width="@dimen/_210sdp"
+        android:layout_height="@dimen/_18sdp"/>
+
+    <ImageView
+        android:scaleX="-1"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:scaleType="fitCenter"
+        android:layout_weight="1"
+        android:src="@drawable/search_history_arrow"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"/>
+
+</LinearLayout>

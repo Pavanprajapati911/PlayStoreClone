@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search_activity">
+
+    <LinearLayout
+        android:background="@drawable/search_result_page_search_bar_baclground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+      <ImageView
+          android:id="@+id/search_result_page_backbutton"
+          android:layout_marginStart="@dimen/_10sdp"
+          android:layout_alignParentRight="true"
+          android:src="@drawable/arrow"
+          android:layout_width="@dimen/_20sdp"
+          android:layout_height="@dimen/_24sdp"/>
+
+      <TextView
+          android:layout_marginStart="@dimen/_10sdp"
+          android:id="@+id/search_result_page_searched_value"
+          android:text="gta 2"
+          android:textSize="@dimen/_13ssp"
+          android:textColor="@color/dark_grey"
+          android:paddingStart="@dimen/_5sdp"
+          android:layout_marginEnd="@dimen/_5sdp"
+          android:background="@color/white"
+          android:layout_width="@dimen/_190sdp"
+          android:layout_height="@dimen/_17sdp"/>
+
+      <LinearLayout
+          android:orientation="horizontal"
+          android:gravity="center_vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/search_result_page_searchicon"
+            android:src="@drawable/vector_search_icon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
+
+
+        <ImageView
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:scaleType="fitEnd"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/mike_icon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
+
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:divider="@null"
+          android:id="@+id/searchresult_page_recyclerview"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+
+      <RelativeLayout
+          android:id="@+id/loading_animation_Background_SearchResult"
+          android:background="@color/white"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <com.airbnb.lottie.LottieAnimationView
+              android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true"
+              android:id="@+id/loading_animation_SearchResult"
+              android:layout_width="@dimen/_40sdp"
+              android:layout_height="@dimen/_40sdp"
+              app:lottie_autoPlay="true"
+              app:lottie_loop="true"
+              app:lottie_rawRes="@raw/loading_lottie_animation" />
+
+      </RelativeLayout>
+
+  </RelativeLayout>
+
+
+</LinearLayout>

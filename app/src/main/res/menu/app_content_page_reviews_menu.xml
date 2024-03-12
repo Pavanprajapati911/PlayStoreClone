@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/_reviews_menu_share"
+        android:title="Share"
+        app:showAsAction="collapseActionView"/>
+    <item android:id="@+id/reviews_menu_flag_as_inappropriate"
+        android:title="Flag as inappropriate"
+        app:showAsAction="collapseActionView" />
+
+</menu>

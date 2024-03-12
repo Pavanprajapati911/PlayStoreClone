@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <size android:height="@dimen/_40sdp" android:width="@dimen/_70sdp"/>
+    <corners android:radius="@dimen/_5sdp"/>
+    <solid android:color="@color/top_charts__top_free_background_color"/>
+
+</shape>

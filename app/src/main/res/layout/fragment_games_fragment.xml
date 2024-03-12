@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Games_fragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/games_frag_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_33sdp">
+
+            <com.google.android.material.tabs.TabLayout
+                app:tabIndicatorFullWidth="false"
+                app:tabSelectedTextColor="@color/tab_color"
+                app:tabTextAppearance="@style/Tab_layout_text_appearance"
+                app:tabIndicatorColor="@color/tab_color"
+                android:id="@+id/games_frag_tablayout"
+                app:tabMode="scrollable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+            </com.google.android.material.tabs.TabLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/games_frag_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

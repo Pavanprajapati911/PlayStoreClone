@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            app:elevation="0dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/offer_page_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+
+                <ImageView
+                    android:id="@+id/offer_details_page_backButton"
+                    android:src="@drawable/arrow"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_gravity="left"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_23sdp"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_17sdp"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:text="Offer details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/offers_details_activity__game_or_app_details_layout"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="@dimen/_7sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:scaleType="fitXY"
+                            android:id="@+id/offer_details_page_gameImage"
+                            android:layout_width="@dimen/_45sdp"
+                            android:layout_height="@dimen/_45sdp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/_180sdp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/offer_details_page_gameName"
+                            android:textSize="@dimen/_13ssp"
+                            android:textColor="@color/dark_grey"
+                            android:text="Game name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:id="@+id/offer_details_page_game_Companyname"
+                            android:textSize="@dimen/_9ssp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/app_text_color"
+                            android:text="Game companyname "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/offer_details_page_game_ratings"
+                                android:textSize="@dimen/_10ssp"
+                                android:textColor="@color/app_text_color"
+                                android:text="4.6 *"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/offer_details_page_game_size"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:textSize="@dimen/_9ssp"
+                                android:text="100 MB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:textSize="@dimen/_9ssp"
+                            android:textColor="@color/app_text_color"
+                            android:text="Contains ads . in-app purchases"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:textColor="@color/white"
+                        android:text="Install"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/install_button_background"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_28sdp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/offer_details_page_game_offerimage"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_140sdp"/>
+
+                <TextView
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="@color/app_text_color"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="Offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/offer_details_page_game_offertitle"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="Offer title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/offer_details_page_game_offerdescription"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_11ssp"
+                    android:textColor="@color/app_text_color"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="Offer Description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/loading_animation_Background_Offerdetails"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_490sdp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/loading_animation_Offerdetails"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/loading_lottie_animation" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
